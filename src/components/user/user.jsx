@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Profile, Avatar, Stats, Item } from '../App.styled.js';
+import { Profile, Avatar, Stats, Item } from './User.styled';
 
 export const User = ({ username, tag, location, avatar, stats }) => {
   return (

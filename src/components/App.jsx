@@ -1,17 +1,21 @@
-import user from 'components/user/user.json';
-import { User } from 'components/user/user.jsx';
-import data from './user-data/data';
-import { Statistics } from './user-data/data.jsx';
-import friends from './user-friends/friends.json';
-import { FriendList } from './user-friends/friends.jsx';
-import transactions from './user-transactions/transactions.json';
-import { TransactionsHistory } from './user-transactions/transactions.jsx';
+
+import { User } from './User/User.jsx';
+import { Statistics } from './Statistics/Statistics.jsx';
+import { FriendList } from './FriendsList/FriendsList.jsx';
+import { TransactionsHistory } from './TransactionsHistory/Transactions.jsx';
+
+import user from '../data/user.json';
+import data from '../data/statistics.json';
+import friends from '../data/friendsList.json';
+import transactions from '../data/transactions.json';
+
 
 export const App = () => {
   return (
     <>
       <User
         username={user.username}
+
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
